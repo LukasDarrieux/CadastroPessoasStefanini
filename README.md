@@ -1,6 +1,6 @@
 # 🧪 Teste Técnico - Desenvolvedor .NET + ReactJS | Stefanini
 
-Este repositório contém a implementação do teste técnico proposto pela Stefanini para a vaga de Desenvolvedor .NET + ReactJS. A aplicação consiste em um sistema de cadastro de pessoas, com operações completas de CRUD, autenticação, versionamento de API e documentação via Swagger.
+Este repositório contém a implementação do teste técnico proposto pela Stefanini para a vaga de Desenvolvedor .NET + ReactJS. A aplicação consiste em um sistema de cadastro de pessoas, com operações completas de CRUD, autenticação e documentação via Swagger.
 
 ## 📌 Descrição
 
