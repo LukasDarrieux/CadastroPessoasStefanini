@@ -65,6 +65,16 @@ function PessoaCreate() {
         document.getElementById("mensagem").innerHTML = "";
         const url = "/api/Pessoa";
 
+        if (cpf === undefined || cpf === "") {
+            document.getElementById("mensagem").innerHTML = "Informe o CPF";
+            return;
+        }
+
+        if (dataNascimento === undefined || dataNascimento === "") {
+            document.getElementById("mensagem").innerHTML = "Informe a Data de Nascimento";
+            return;
+        }
+
         if (sexo === "" || sexo == undefined)
             setSexo(0);
 
@@ -196,7 +206,7 @@ function PessoaCreate() {
 
 
                         <div className="d-flex justify-content-center">
-                            <button type="button" className="btn btn-primary mx-2" onClick={cadastrar}>
+                            <button type="submit" className="btn btn-primary mx-2" onClick={cadastrar}>
                                 <i className="bi bi-floppy"></i>
                                 <span className="mx-2">Cadastrar</span>
                             </button>
