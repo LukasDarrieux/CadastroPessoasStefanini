@@ -108,6 +108,16 @@ function PessoaEdit() {
         document.getElementById("mensagem").innerHTML = "";
         const url = "/api/Pessoa/" + id;
 
+        if (cpf === undefined || cpf === "") {
+            document.getElementById("mensagem").innerHTML = "Informe o CPF";
+            return;
+        }
+
+        if (dataNascimento === undefined || dataNascimento === "") {
+            document.getElementById("mensagem").innerHTML = "Informe a Data de Nascimento";
+            return;
+        }
+
         if (sexo === "" || sexo == undefined)
             setSexo(0);
 
