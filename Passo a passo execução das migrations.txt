@@ -1,0 +1,19 @@
+Passo a passo para execução das migrations - Criação do arquivo de banco de dados "CadastroPessoasStefanini.db" SQLite
+
+-> Abra o terminal no Visual Studio 2022
+-> Verifique se tem o Entity Framework executando o seguinte comando
+
+ dotnet ef --version
+
+-> Caso o Entity Framework não tiver instalado rode o comando abaixo
+
+ dotnet tool install --global dotnet-ef
+
+-> No terminal vá até o diretório onde se encontra a solution (arquivo com extensão ".sln")
+-> Estando nesse diretório dentro do terminal execute o comando abaixo para criar a Migrations caso ela não exista
+
+ dotnet ef migrations add MigrationInicial --project CadastroPessoasStefanini.Data --startup-project CadastroPessoasStefanini.API
+
+-> Depois de criar a migration utilizando o comando anterior vamos aplicar as alterações no banco de dados executando o comando abaixo
+
+ dotnet ef database update --project CadastroPessoasStefanini.Data --startup-project CadastroPessoasStefanini.API
